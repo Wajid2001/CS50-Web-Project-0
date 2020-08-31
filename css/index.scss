@@ -1,0 +1,41 @@
+body{
+    min-width:400px;
+}
+
+#search-icon{
+    fill: #9aa0a6;
+    width:  20px;
+    height: 20px;
+}
+
+.my-shadow {    
+    box-shadow: 0 1px 0.4rem rgba(0, 0, 0, 0.200) !important;
+    border: none!important;
+}
+
+#search-box{
+    display:flex;
+    height: 44px;
+    transition: box-shadow 0.25s;
+    &:hover{
+        @extend .my-shadow;
+    }
+ 
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
+#clear-text{
+    height: -webkit-fill-available;
+    padding: 3px 0px;
+    fill: gray;
+    cursor:pointer;
+}
+
+#seperator{
+    border-left:1px solid #9aa0a6;
+    width: 1px;
+    height: 65%;
+}
