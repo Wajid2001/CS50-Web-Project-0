@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <center>
-            <form class="col-11 col-sm-10 col-md-8 col-lg-6 col-lx-6 mx-auto" action="https://google.com/search">
+            <form class="mx-auto" action="https://google.com/search">
 
                 <!-- This adds the google serach logo -->
                 <img src="img/Logo.png">
@@ -60,9 +60,9 @@
 
                 <!-- These are the search buttons -->
                 <div>
-                    <input type="submit" value="Google Search">
-                    <input type="button" onclick="window.location.href='https://www.google.com/doodles/';"
-                        value="I'm Feeling Lucky">
+                    <input id="searchbtn" class="px-3 py-2 rounded" type="submit" value="Google Search">
+                    <input id="doodlesbtn" class="px-3 py-2 rounded" type="button"
+                        onclick="window.location.href='https://www.google.com/doodles/';" value="I'm Feeling Lucky">
                 </div>
             </form>
         </center>

@@ -1,3 +1,7 @@
+/*
+ *  This for the machanisim of search box
+ */
+
 // sq = search query object
 // sb = search box object
 // ct = clear text object
@@ -40,4 +44,31 @@ ct.onclick = function () {
     sq.value = '';
     ct.style.display = 'none';
     sp.style.display = 'none';
+};
+
+/*
+ *  This is for the machnism of button below search box
+ */
+
+// sbtn for searchbtn  or search button
+// dbtn for doodlesbtn or doodle button
+sbtn = document.querySelector("#searchbtn");
+dbtn = document.querySelector("#doodlesbtn");
+
+// Functionality of submit button
+sbtn.onmouseover = function () {
+    sbtn.classList.add('shadow-sm');
+};
+
+sbtn.onmouseleave = function () {
+    sbtn.classList.remove('shadow-sm');
+};
+
+// Functionality of doodle button
+dbtn.onmouseover = function () {
+    dbtn.classList.add('shadow-sm');
+};
+
+dbtn.onmouseleave = function () {
+    dbtn.classList.remove('shadow-sm');
 };
