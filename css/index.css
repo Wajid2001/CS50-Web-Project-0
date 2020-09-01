@@ -3,8 +3,7 @@ body {
 }
 
 .container {
-  max-width: 584px;
-  margin: 0;
+  padding: 0px 32px !important;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,6 +24,7 @@ body {
 }
 
 #search-box {
+  max-width: 584px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,5 +73,24 @@ input[type="submit"]:focus, input[type="button"]:focus {
   border-left: 1px solid #9aa0a6;
   width: 1px;
   height: 65%;
+}
+
+#lang {
+  font-family: arial,sans-serif;
+  font-size: small;
+}
+
+#lang a {
+  margin: 0px 3px;
+  color: blueviolet;
+}
+
+#lang a:hover {
+  -webkit-text-decoration-color: blueviolet;
+          text-decoration-color: blueviolet;
+}
+
+#lang a:visited {
+  color: purple;
 }
 /*# sourceMappingURL=index.css.map */

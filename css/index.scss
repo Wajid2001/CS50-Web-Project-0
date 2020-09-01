@@ -2,8 +2,7 @@ body{
     min-width:400px;
 }
 .container{
-    max-width: 584px;
-    margin: 0;
+    padding: 0px 32px !important;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,6 +20,7 @@ body{
 }
 
 #search-box{
+    max-width: 584px;
     display:flex;
     height: 44px;
     transition: box-shadow 0.25s;
@@ -65,4 +65,19 @@ input[type="submit"], input[type="button"]{
     border-left:1px solid #9aa0a6;
     width: 1px;
     height: 65%;
+}
+
+#lang{
+    font-family: arial,sans-serif;
+    font-size: small;
+    a{
+        margin: 0px 3px;
+        color:blueviolet;
+        &:hover{
+            text-decoration-color: blueviolet;
+        }
+        &:visited{
+            color: purple;
+        }
+    }
 }
