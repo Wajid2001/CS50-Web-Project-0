@@ -104,6 +104,8 @@ input[type="submit"]:focus, input[type="button"]:focus {
 }
 
 #footer #country {
+  font-size: 15px;
+  height: 41px !important;
   color: rgba(0, 0, 0, 0.54);
   padding-left: 30px !important;
   padding-right: 30px !important;
@@ -138,6 +140,7 @@ input[type="submit"]:focus, input[type="button"]:focus {
 }
 
 #footer #footer-bottom #left-footer, #footer #footer-bottom #right-footer {
+  height: 40px !important;
   min-width: 400px;
 }
 

@@ -86,6 +86,8 @@ input[type="submit"], input[type="button"]{
     background: #f2f2f2;
     font-size: 14px;
     #country{
+        font-size: 15px;
+        height:41px !important;
         color: rgba(0,0,0,.54);
         padding-left:30px !important;
         padding-right: 30px !important;
@@ -99,7 +101,7 @@ input[type="submit"], input[type="button"]{
         display: block;
         padding-left:30px !important;
         padding-right: 30px !important;
-        
+
         .link-left{
             padding-left: 27px;
         }
@@ -119,6 +121,7 @@ input[type="submit"], input[type="button"]{
         }
 
         #left-footer, #right-footer{
+            height:40px !important;
             min-width: 400px;
             @media(max-width: 860px){
                 text-align: center;
