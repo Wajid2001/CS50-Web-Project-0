@@ -3,32 +3,96 @@ body {
   font-family: arial, sans-serif !important;
 }
 
-.container {
-  padding: 0px 32px !important;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+body a {
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
 }
 
-#search-icon {
-  fill: #9aa0a6;
-  width: 20px;
-  height: 20px;
+#header-right {
+  margin-top: 12px;
+  margin-right: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: right;
+  text-align: right;
+  font-size: 13px;
 }
 
-.my-shadow, form #search-box:hover {
+@media (min-width: 200px) {
+  #header-right {
+    display: hidden;
+  }
+}
+
+#header-right #links a {
+  height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  padding-right: 7.5px;
+}
+
+#header-right #links a:hover, #header-right #links a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+#header-right #apps {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+  cursor: pointer;
+}
+
+#header-right #apps:hover, #header-right #apps:focus {
+  background: lightgray;
+}
+
+#header-right #apps svg {
+  fill: rgba(0, 0, 0, 0.87);
+}
+
+#header-right #apps svg:hover {
+  fill: black;
+}
+
+#header-right #signin {
+  margin-left: 7.5px;
+  padding: 6px 12px;
+  background: #3c7ae4;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #4285f4;
+}
+
+#header-right #signin:hover, #header-right #signin:focus {
+  outline: none;
+  text-decoration: none;
+  background: #3f76d3;
+}
+
+.my-shadow, .container form #search-box:hover {
   -webkit-box-shadow: 0 1px 0.4rem rgba(0, 0, 0, 0.2) !important;
           box-shadow: 0 1px 0.4rem rgba(0, 0, 0, 0.2) !important;
   border: none !important;
 }
 
-form {
+.container {
+  padding: 0px 32px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -53%);
+          transform: translate(-50%, -53%);
+}
+
+.container form {
   min-width: 336px;
 }
 
-form #search-box {
+.container form #search-box {
   max-width: 584px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,11 +104,30 @@ form #search-box {
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
 }
 
-input[type="text"], input[type="password"], textarea, select {
+.container form #search-box #search-icon {
+  fill: #9aa0a6;
+  width: 20px;
+  height: 20px;
+}
+
+.container form #search-box #clear-text {
+  height: -webkit-fill-available;
+  padding: 3px 0px;
+  fill: gray;
+  cursor: pointer;
+}
+
+.container form #search-box #seperator {
+  border-left: 1px solid #9aa0a6;
+  width: 1px;
+  height: 65%;
+}
+
+.container form input[type="text"], .container form input[type="password"], .container form textarea, .container form select {
   outline: none;
 }
 
-input[type="submit"], input[type="button"] {
+.container form input[type="submit"], .container form input[type="button"] {
   background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
@@ -56,45 +139,32 @@ input[type="submit"], input[type="button"] {
   margin: 0px 4px;
 }
 
-input[type="submit"]:hover, input[type="button"]:hover {
+.container form input[type="submit"]:hover, .container form input[type="button"]:hover {
   background-color: #f8f8f8;
   border: 1px solid #c6c6c6;
   color: #222;
 }
 
-input[type="submit"]:focus, input[type="button"]:focus {
+.container form input[type="submit"]:focus, .container form input[type="button"]:focus {
   border: 1px solid #4d90fe;
   outline: none;
 }
 
-#clear-text {
-  height: -webkit-fill-available;
-  padding: 3px 0px;
-  fill: gray;
-  cursor: pointer;
-}
-
-#seperator {
-  border-left: 1px solid #9aa0a6;
-  width: 1px;
-  height: 65%;
-}
-
-#lang {
+.container #lang {
   font-size: small;
 }
 
-#lang a {
+.container #lang a {
   margin: 0px 3px;
   color: blueviolet;
 }
 
-#lang a:hover {
+.container #lang a:hover {
   -webkit-text-decoration-color: blueviolet;
           text-decoration-color: blueviolet;
 }
 
-#lang a:visited {
+.container #lang a:visited {
   color: purple;
 }
 
@@ -111,22 +181,22 @@ input[type="submit"]:focus, input[type="button"]:focus {
   padding-right: 30px !important;
 }
 
-#footer a {
-  color: #5f6368;
-}
-
 #footer #footer-bottom {
   display: block;
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
 
+#footer #footer-bottom a {
+  color: #5f6368;
+}
+
 #footer #footer-bottom .link-left {
-  padding-left: 27px;
+  margin-left: 27px;
 }
 
 #footer #footer-bottom .link-right {
-  padding-left: 27px;
+  margin-left: 27px;
 }
 
 #footer #footer-bottom #left-footer {
