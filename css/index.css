@@ -48,13 +48,14 @@ body a {
 
 #header-right #apps:hover, #header-right #apps:focus {
   background: lightgray;
+  outline: none;
 }
 
 #header-right #apps svg {
   fill: rgba(0, 0, 0, 0.87);
 }
 
-#header-right #apps svg:hover {
+#header-right #apps svg:hover, #header-right #apps svg:focus {
   fill: black;
 }
 

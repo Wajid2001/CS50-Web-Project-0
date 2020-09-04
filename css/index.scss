@@ -52,12 +52,13 @@ body{
         cursor: pointer;
         &:hover, &:focus{
             background:lightgray;
+            outline:none;
         }
 
         // This is inside the apps
         svg{
             fill: $color;
-            &:hover{
+            &:hover, &:focus{
                 fill: black;
             }
         }
