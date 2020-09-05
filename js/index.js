@@ -16,6 +16,27 @@ signin.onmouseleave = function () {
 
 
 /*
+ *  This is the mechanisism of the app drawer
+ */
+apps = document.querySelector('#apps');
+appDrawer = document.querySelector('#apps-drawer');
+
+function appsStyleF(a) {
+    appDrawer.style.display = a;
+}
+
+apps.onclick = function () {
+    if (appDrawer.style.display === 'block') {
+        appsStyleF('none');
+    }
+    else {
+        appsStyleF('block');
+    }
+}
+
+
+
+/*
  *  This for the machanisim of search box
  */
 

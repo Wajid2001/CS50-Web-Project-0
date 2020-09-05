@@ -2,9 +2,6 @@
 body{
     min-width:400px;
     font-family: arial,sans-serif!important;
-    a{
-        transition: all 250ms;
-    }
 }
 ::-webkit-scrollbar{
     width:16px;
@@ -24,78 +21,167 @@ body{
 // These are the right header properties
 #header-right{
     
+    display: inline-grid;
+    float: right;
+
     // Variables
     $margin-left-right:7.5px;
     $color: rgba(0,0,0,0.87);
 
-    // css
-    margin-top:12px;
-    margin-right: 30px;
-    display: inline-flex;
-    float: right;
-    text-align: right;
-    font-size: 13px;
-
-    @media(min-width:200px){
+    @media(min-width:400px){
         display: hidden;
     }
+    #tools{
+        margin-top: 12px;
+        justify-self: right;
+        margin-right: 30px;
+        display: inline-flex;
+        font-size: 13px;
 
-    // This is insede the right header
-    #links{
+        // This is insede the right header
+        #links{
 
-        // This is inside the links
-        a{
-            height:24px;
-            
-            color: $color;
-            text-decoration: none;
-            padding-right:$margin-left-right;
+            // This is inside the links
+            a{
+                height:24px;
+                
+                color: $color;
+                text-decoration: none;
+                padding-right:$margin-left-right;
+                &:hover, &:focus{
+                    text-decoration: underline;
+                    outline:none;
+                }
+            }
+        }
+        
+        // This is inside right header
+        #apps{
+            height: 40px;
+            width: 40px;
+            padding:8px;
+            transition: background-color 400ms;
+            cursor: pointer;
             &:hover, &:focus{
-                text-decoration: underline;
+                background:lightgray;
                 outline:none;
             }
-        }
-    }
-    
-    // This is inside right header
-    #apps{
-        height: 40px;
-        width: 40px;
-        padding:8px;
-        transition: background-color 400ms;
-        cursor: pointer;
-        &:hover, &:focus{
-            background:lightgray;
-            outline:none;
+
+            // This is inside the apps
+            svg{
+                fill: $color;
+                &:hover, &:focus{
+                    fill: black;
+                }
+            }
         }
 
-        // This is inside the apps
-        svg{
-            fill: $color;
+        // This is inside the more-apps
+        #signin{
+            margin-left: $margin-left-right;
+            padding: 6px 12px; 
+            background:#3c7ae4;
+            color: white;
+            font-weight: bold;
+            border: 1px solid #4285f4;
+
+            // This is inside the sign in button
             &:hover, &:focus{
-                fill: black;
+                outline:none;
+                text-decoration: none;
+                background:#3f76d3;
             }
         }
     }
 
-    // This is inside the more-apps
-    #signin{
-        margin-left: $margin-left-right;
-        padding: 6px 12px; 
-        background:#3c7ae4;
-        color: white;
-        font-weight: bold;
-        border: 1px solid #4285f4;
+    // These is inside the right header
+    #apps-drawer{
+        display:none;
 
-        // This is inside the sign in button
-        &:hover, &:focus{
-            outline:none;
-            text-decoration: none;
-            background:#3f76d3;
+        // Position
+        float: right;
+
+        // To make it infront
+        z-index: 1500;
+
+        // to enable scroll
+        overflow-y: overlay;
+
+        // size
+        min-width: 300px;
+        max-width: 320px;
+        max-height: 436px;
+
+        margin: 10px 30px;
+
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.2);
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
+        border-radius: 8px;
+        
+        // Links inside the apps drawer
+        .appDrawerSection{
+
+            display: flex;
+            flex-wrap: wrap;
+
+            padding:14px;
+
+            // This inside right header/app Drawer/app Drawer Section
+            a{
+                // For size
+                $len1: 84px;
+                height: $len1;
+                width: $len1;
+                margin: 6px;
+
+                transition: all 250ms;
+
+                // For text
+                text-align: center;
+                color: black;    
+                font-size: 14px;
+                letter-spacing: .09px;
+                line-height: 18px;
+
+                &:hover, &:focus{    
+                    background-color: #e8f0fe;
+                    border: none;
+                    height:auto;
+                    .special-div{
+                        height:auto;
+                    }
+                    border-radius: 8px;
+                    text-decoration: none;
+                    white-space: none;
+                    z-index: 1508;
+                }
+                .special-div{
+                    overflow:hidden;
+                    height:18px;
+                }
+                .apps-img{
+                    background: url('./google-app-icons.png');
+                }
+                .apps-img, img{
+                    $len: 64px;
+                    height: $len;
+                    width: $len;
+                    padding: 10px 8px;
+                    margin: auto;
+                }
+            }
         }
-    }
-    
+
+        // This inside right header/app Drawer/app Drawer Section
+        .break-line{
+            background: rgba(0, 0, 0, 0.2);
+            height: 1px;
+            width: -webkit-fill-available;
+        }
 }
+}
+
 
 
 // These are the search form properties
