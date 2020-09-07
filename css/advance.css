@@ -50,11 +50,24 @@ body {
   border-top: 1px solid #ebebeb;
 }
 
-#middle .myTable {
+#middle .h {
+  font-size: 16px !important;
+}
+
+#middle .b {
+  padding-left: 5px !important;
+  font-weight: 700;
+  font-size: 13px !important;
+  color: #777 !important;
+}
+
+#middle form .myTable {
+  margin: 40px 45px;
   max-width: 1135px;
 }
 
-#middle .myTable .myRow {
+#middle form .myTable .myRow {
+  margin-bottom: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,11 +75,14 @@ body {
       flex-wrap: wrap;
 }
 
-#middle .myTable .myRow .CellA {
+#middle form .myTable .myRow .CellA {
   max-width: 183px;
+  color: #222;
+  font-size: 13px;
+  margin: auto 0px;
 }
 
-#middle .myTable .myRow .CellB {
+#middle form .myTable .myRow .CellB {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,15 +91,45 @@ body {
   max-width: 952px;
 }
 
-#middle .myTable .myRow .CellB .CellC {
+#middle form .myTable .myRow .CellB .CellC {
   max-width: 570px;
+  margin: auto 0px;
 }
 
-#middle .myTable .myRow .CellB .CellD {
+#middle form .myTable .myRow .CellB .CellC input {
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 29px;
+  width: 100%;
+  padding: 1px 8px;
+  -webkit-transition: border 250ms;
+  transition: border 250ms;
+}
+
+#middle form .myTable .myRow .CellB .CellC input:hover, #middle form .myTable .myRow .CellB .CellC input:focus {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+#middle form .myTable .myRow .CellB .CellD {
+  margin: auto 0px;
+  padding-left: 15px;
   max-width: 382px;
+  font-size: 11px;
+  color: #555;
 }
 
-#middle .CellA, #middle .CellB, #middle .CellC, #middle .CellD {
+#middle form .myTable .myRow .CellB .CellD span {
+  color: #666;
+  font-family: monospace;
+  white-space: pre;
+}
+
+#middle form .CellA, #middle form .CellB, #middle form .CellC, #middle form .CellD {
   width: 100%;
 }
 
