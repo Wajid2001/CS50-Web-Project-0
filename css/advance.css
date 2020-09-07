@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#header-right {
+  display: block;
+  width: 100%;
+  background: #f2f2f2;
+  padding: 10px 30px 10px 15px;
+}
+
+#header-right a[href="index.html"] svg {
+  margin-top: 5px;
+  width: 92px;
+}
+
+#header-right #tools {
+  margin: 0px !important;
+  float: right;
+}
+
+#middle {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+#middle .Section1 {
+  width: 100%;
+  display: inline-block;
+  padding: 25px 35px;
+}
+
+#middle .Section1 h5 {
+  padding-left: 10px;
+  margin: 0px !important;
+}
+
+#middle .seperateLine {
+  border-top: 1px solid #ebebeb;
+}
+
+#middle .myTable {
+  max-width: 1135px;
+}
+
+#middle .myTable .myRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#middle .myTable .myRow .CellA {
+  max-width: 183px;
+}
+
+#middle .myTable .myRow .CellB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 952px;
+}
+
+#middle .myTable .myRow .CellB .CellC {
+  max-width: 570px;
+}
+
+#middle .myTable .myRow .CellB .CellD {
+  max-width: 382px;
+}
+
+#middle .CellA, #middle .CellB, #middle .CellC, #middle .CellD {
+  width: 100%;
+}
+
+#footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#footer #footer-bottom {
+  background: #f2f2f2;
+  min-height: 40px;
+}
+/*# sourceMappingURL=advance.css.map */

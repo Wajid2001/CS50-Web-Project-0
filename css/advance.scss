@@ -1,0 +1,127 @@
+html, body{
+    
+    // This is to keep footer at bottom
+    height:100%
+    
+}
+
+body{
+
+    // This is to keep footer at bottom
+    display: flex;
+    flex-direction: column;
+
+}
+
+// This is the header of the page
+#header-right{
+    display: block;
+    width: 100%; 
+    background: #f2f2f2; 
+    padding: 10px 30px 10px 15px;
+
+    // This is inside of right header
+    a[href="index.html"]{
+        svg {
+            margin-top: 5px;
+            width: 92px;
+        }
+    }
+    
+    // This is inside of right header
+    #tools{
+        margin:0px !important; 
+        float: right;
+    }
+}
+
+
+// This is the middle section of the page
+#middle{
+
+    // This is to keep footer at bottom
+    flex:auto;
+
+    .Section1{
+        width: 100%;
+        display: inline-block;
+        padding: 25px 35px;
+        h5{
+            padding-left: 10px;
+            margin: 0px !important;
+        }
+    }
+
+    .seperateLine{
+        border-top: 1px solid #ebebeb;
+    }
+
+
+    .myTable{
+        max-width: 1135px;
+        .myRow{
+            display: flex;
+            flex-wrap: wrap;
+            .CellA{
+                max-width: 183px;
+            }
+            .CellB{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 952px;
+                .CellC{
+                    max-width: 570px;
+                }
+                .CellD{
+                    max-width: 382px;
+                }
+            }
+        }
+    }
+    .CellA, .CellB,.CellC, .CellD{
+        width: 100%;
+    }
+    
+
+    // // This is main table for the form 
+    // table{
+    //     width: calc(100% - 90px);
+    //     margin: 40px 45px;
+
+    //     tr{
+    //         display: flex;
+    //         flex-wrap: wrap;
+            
+    //         .firstCol{
+    //             max-width: 160px;
+    //         }
+
+    //         .twoCol{
+    //             width:100%;
+    //             min-width: 300px;
+    //             max-width: 575px;
+    //         }
+
+    //         @media(max-width:730px){
+    //             .thirdCol{
+    //                 display: none;
+    //             }
+    //         }
+    //         // Table row ending
+    //     }
+    //     // Table ending
+    // }
+}
+
+
+// This is the footer of the page
+#footer{
+
+    // This is to keep footer at bottom
+    flex-shrink: 0;
+
+    #footer-bottom{
+        background: #f2f2f2;
+        min-height: 40px;
+    }
+}
