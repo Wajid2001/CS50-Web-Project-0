@@ -74,7 +74,7 @@ body{
             .myRow{    
                 margin-bottom: 13px;
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 .CellA{
                     max-width: 183px;
                     color: #222;
@@ -83,8 +83,9 @@ body{
                 }
                 .CellB{
                     display: flex;
-                    flex-wrap: wrap;
+                    flex-wrap: nowrap;
                     max-width: 952px;
+
                     .CellC{
                         max-width: 570px;
                         margin: auto 0px;
@@ -115,6 +116,11 @@ body{
                             color: #666;
                             font-family: monospace;
                             white-space: pre;
+                        }
+                    }
+                    @media(max-width: 650px){
+                        .CellD{
+                            display: none;
                         }
                     }
                 }
